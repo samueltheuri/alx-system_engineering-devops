@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# SSH Client configuration settings to connect without password and use ~/.ssh/school to as private key
+
+Host *
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+    PubkeyAuthentication yes
